@@ -11,7 +11,7 @@ get_AIC <- function(models, dataset){
   # Compute the AIC for each model       #
   ########################################
   AIC_val <- c()
-  for (i in 1:length(models)){
+  for (i in 1:length(models)){/
     model <- lm(models[i], data = dataset)
     AIC_val <- c(AIC_val, AIC(model))
   }
